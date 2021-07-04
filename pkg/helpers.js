@@ -57,7 +57,12 @@ function getNotionResources() {
   let folder = '';
   switch (process.platform) {
     case 'darwin':
-      folder = '/Applications/Notion.app/Contents/Resources';
+      for (let loc of [
+        `/Users/${process.env.USER}/Applications/Notion.app/Contents/Resources`, // Notion is installed only for the current user
+        '/Applications/Notion.app/Contents/Resources' // Notion is installed globally
+      ]) {
+        if (fs.pathExistsSync(loc)) folder = loc;
+      }
       break;
     case 'win32':
       folder = process.env.LOCALAPPDATA + '\\Programs\\Notion\\resources';
