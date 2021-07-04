@@ -1,0 +1,158 @@
+/*
+ * gruvbox dark
+ * (c) 2021 jordanrobinson <me@jordanrobinson.co.uk> (https://jordanrobinson.co.uk)
+ * under the MIT license
+ */
+
+ :root {
+
+  --theme_gruvbox_dark--bg:           #282828;
+  --theme_gruvbox_dark--gray-dark:    #928374;
+  --theme_gruvbox_dark--red-dark:     #cc241d;
+  --theme_gruvbox_dark--red-light:    #fb4934;
+  --theme_gruvbox_dark--green-dark:   #98971a;
+  --theme_gruvbox_dark--green-light:  #b8bb26;
+  --theme_gruvbox_dark--yellow-dark:  #d79921;
+  --theme_gruvbox_dark--yellow-light: #fabd2f;
+  --theme_gruvbox_dark--blue-dark:    #458588;
+  --theme_gruvbox_dark--blue-light:   #83a598;
+  --theme_gruvbox_dark--purple-dark:  #b16286;
+  --theme_gruvbox_dark--purple-light: #d3869b;
+  --theme_gruvbox_dark--aqua-dark:    #689d6a;
+  --theme_gruvbox_dark--aqua-light:   #8ec07c;
+  --theme_gruvbox_dark--gray-light:   #a89984;
+  --theme_gruvbox_dark--orange-dark:  #d65d0e;
+  --theme_gruvbox_dark--orange-light: #fe8019;
+  --theme_gruvbox_dark--fg:           #ebdbb2;
+  --theme_gruvbox_dark--bg0-h:        #1d2021;
+  --theme_gruvbox_dark--bg0:          #282828;
+  --theme_gruvbox_dark--bg1:          #3c3836;
+  --theme_gruvbox_dark--bg2:          #504945;
+  --theme_gruvbox_dark--bg3:          #665c54;
+  --theme_gruvbox_dark--bg4:          #7c6f64;
+  --theme_gruvbox_dark--bg0-s:        #32302f;
+  --theme_gruvbox_dark--fg4:          #a89984;
+  --theme_gruvbox_dark--fg3:          #bdae93;
+  --theme_gruvbox_dark--fg2:          #d5c4a1;
+  --theme_gruvbox_dark--fg1:          #ebdbb2;
+  --theme_gruvbox_dark--fg0:          #fbf1c7;
+
+
+  --theme_dark--main: var(--theme_gruvbox_dark--bg0);
+  --theme_dark--sidebar: var(--theme_gruvbox_dark--bg1);
+  --theme_dark--overlay: rgba(80, 73, 69, 0.5);
+  --theme_dark--dragarea: var(--theme_gruvbox_dark--bg1);
+
+  --theme_dark--font_sans: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+
+  --theme_dark--scrollbar: var(--theme_gruvbox_dark--bg0-s);
+  --theme_dark--scrollbar_hover: var(--theme_gruvbox_dark--bg3);
+
+  --theme_dark--card: var(--theme_gruvbox_dark--bg3);
+  --theme_dark--gallery: var(--theme_gruvbox_dark--bg3);
+  --theme_dark--select_input: var(--theme_gruvbox_dark--gray-light);
+  --theme_dark--table-border: var(--theme_gruvbox_dark--gray-light);
+  --theme_dark--ui-border: var(--theme_dark--table-border);
+  --theme_dark--interactive_hover: rgba(80, 73, 69, 0.7);
+  --theme_dark--button_close: var(--theme_gruvbox_dark--red-dark);
+
+  --theme_dark--selected: rgba(80, 73, 69, 0.5);
+  --theme_dark--primary: var(--theme_gruvbox_dark--bg3);
+  --theme_dark--primary_hover: var(--theme_gruvbox_dark--fg3);
+  --theme_dark--primary_click: var(--theme_gruvbox_dark--fg3);
+  --theme_dark--primary_indicator: var(--theme_gruvbox_dark--blue-dark);
+
+  --theme_dark--option_active-background: var(--theme_dark--primary);
+  --theme_dark--option_hover-background: var(--theme_dark--primary_hover);
+
+  --theme_dark--danger_text: var(--theme_gruvbox_dark--red-dark);
+  --theme_dark--danger_border: var(--theme_gruvbox_dark--red-light);
+
+  --theme_dark--text: var(--theme_gruvbox_dark--fg0);
+  --theme_dark--text_ui: var(--theme_gruvbox_dark--fg3);
+  --theme_dark--text_ui_info: var(--theme_gruvbox_dark--bg3);
+
+  --theme_dark--text_gray: var(--theme_gruvbox_dark--gray-dark);
+  --theme_dark--text_brown: var(--theme_gruvbox_dark--bg4);
+  --theme_dark--text_orange: var(--theme_gruvbox_dark--orange-dark);
+  --theme_dark--text_yellow: var(--theme_gruvbox_dark--yellow-dark);
+  --theme_dark--text_green: var(--theme_gruvbox_dark--green-dark);
+  --theme_dark--text_blue: var(--theme_gruvbox_dark--blue-dark);
+  --theme_dark--text_purple: var(--theme_gruvbox_dark--purple-dark);
+  --theme_dark--text_pink: var(--theme_gruvbox_dark--purple-light);
+  --theme_dark--text_red: var(--theme_gruvbox_dark--red-dark);
+
+  --theme_dark--select-text: rgba(80, 73, 69 0.3);
+  --theme_dark--select_gray: var(--theme_gruvbox_dark--gray-dark);
+  --theme_dark--select_gray-text: var(--theme_gruvbox_dark--bg2);
+  --theme_dark--select_brown: var(--theme_gruvbox_dark--fg3);
+  --theme_dark--select_brown-text: var(--theme_gruvbox_dark--bg2);
+  --theme_dark--select_orange: var(--theme_gruvbox_dark--orange-dark);
+  --theme_dark--select_yellow: var(--theme_gruvbox_dark--yellow-dark);
+  --theme_dark--select_green: var(--theme_gruvbox_dark--green-dark);
+  --theme_dark--select_blue: var(--theme_gruvbox_dark--blue-dark);
+  --theme_dark--select_purple: var(--theme_gruvbox_dark--purple-dark);
+  --theme_dark--select_pink: var(--theme_gruvbox_dark--purple-light);
+  --theme_dark--select_red: var(--theme_gruvbox_dark--red-dark);
+  --theme_dark--select_red-text: var(--theme_gruvbox_dark--fg2);
+
+  --theme_dark--bg-text: var(--theme_dark--select-text);
+  --theme_dark--bg_gray: var(--theme_gruvbox_dark--gray-dark);
+  --theme_dark--bg_brown: var(--theme_dark--select_brown);
+  --theme_dark--bg_orange: var(--theme_gruvbox_dark--orange-dark);
+  --theme_dark--bg_yellow: var(--theme_gruvbox_dark--yellow-dark);
+  --theme_dark--bg_green: var(--theme_gruvbox_dark--green-dark);
+  --theme_dark--bg_blue: var(--theme_gruvbox_dark--blue-dark);
+  --theme_dark--bg_purple: var(--theme_gruvbox_dark--purple-dark);
+  --theme_dark--bg_pink: var(--theme_dark--select_pink);
+  --theme_dark--bg_red: var(--theme_gruvbox_dark--red-dark);
+
+  --theme_dark--line-text:        var(--theme_dark--text);
+  --theme_dark--line_gray:        var(--theme_dark--text_gray);
+  --theme_dark--line_gray-text:   var(--theme_dark--text);
+  --theme_dark--line_brown:       var(--theme_dark--text_brown);
+  --theme_dark--line_brown-text:  var(--theme_dark--text);
+  --theme_dark--line_orange:      var(--theme_dark--text_orange);
+  --theme_dark--line_yellow:      var(--theme_dark--text_yellow);
+  --theme_dark--line_green:       var(--theme_dark--text_green);
+  --theme_dark--line_blue:        var(--theme_dark--text_blue);
+  --theme_dark--line_purple:      var(--theme_dark--text_purple);
+  --theme_dark--line_pink:        var(--theme_dark--text_pink);
+  --theme_dark--line_red:         var(--theme_dark--text_red);
+  --theme_dark--line_red-text:    var(--theme_dark--text);
+
+  --theme_dark--callout-text: var(--theme_dark--text);
+  --theme_dark--callout_gray: var(--theme_dark--line_gray);
+  --theme_dark--callout_gray-text: var(--theme_dark--text);
+  --theme_dark--callout_brown: var(--theme_dark--line_brown);
+  --theme_dark--callout_brown-text: var(--theme_dark--text);
+  --theme_dark--callout_orange: var(--theme_dark--line_orange);
+  --theme_dark--callout_yellow: var(--theme_dark--line_yellow);
+  --theme_dark--callout_green: var(--theme_dark--line_green);
+  --theme_dark--callout_blue: var(--theme_dark--line_blue);
+  --theme_dark--callout_purple: var(--theme_dark--line_purple);
+  --theme_dark--callout_pink: var(--theme_dark--line_pink);
+  --theme_dark--callout_red: var(--theme_dark--line_red);
+  --theme_dark--callout_red-text: var(--theme_dark--text);
+
+  --theme_dark--code_inline-text: var(--theme_gruvbox_dark--blue-light);
+  --theme_dark--code_inline-background: var(--theme_gruvbox_dark--bg1);
+  --theme_dark--code-text: var(--theme_dark--text);
+  --theme_dark--code-background: var(--theme_gruvbox_dark--bg1);
+  --theme_dark--code_function: var(--theme_dark--text_blue);
+  --theme_dark--code_keyword: var(--theme_dark--text_pink);
+  --theme_dark--code_tag: var(--theme_dark--text_pink);
+  --theme_dark--code_operator: var(--theme_dark--text_yellow);
+  --theme_dark--code_important: var(--theme_dark--text_yellow);
+  --theme_dark--code_property: var(--theme_dark--text_pink);
+  --theme_dark--code_builtin: var(--theme_dark--text_yellow);
+  --theme_dark--code_attr-name: var(--theme_dark--text_yellow);
+  --theme_dark--code_comment: var(--theme_dark--text_ui);
+  --theme_dark--code_punctuation: var(--theme_gruvbox_dark--aqua-light);
+  --theme_dark--code_doctype: var(--theme_gruvbox_dark--aqua-light);
+  --theme_dark--code_number: var(--theme_dark--text_purple);
+  --theme_dark--code_string: var(--theme_dark--text_orange);
+  --theme_dark--code_attr-value: var(--theme_dark--text_orange);
+}
