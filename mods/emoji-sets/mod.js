@@ -26,6 +26,7 @@ module.exports = {
         'samsung',
         'whatsapp',
         'facebook',
+        'messenger',
         'joypixels',
         'openmoji',
         'emojidex',

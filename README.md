@@ -298,9 +298,9 @@ on top of other windows even if it's not focused.
 
 **author:** [dragonwocky](https://github.com/dragonwocky/)
 
-| option | type   | values/defaults                                                                                                 |
-| ------ | ------ | --------------------------------------------------------------------------------------------------------------- |
-| style  | select | twitter, apple, google, microsoft, samsung, whatsapp, facebook, joypixels, openmoji, emojidex, lg, htc, mozilla |
+| option | type   | values/defaults                                                                                                            |
+| ------ | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| style  | select | twitter, apple, google, microsoft, samsung, whatsapp, facebook, messenger, joypixels, openmoji, emojidex, lg, htc, mozilla |
 
 ![](https://user-images.githubusercontent.com/16874139/97820652-3f5b7d80-1d03-11eb-80a6-34089b946711.png)
 
