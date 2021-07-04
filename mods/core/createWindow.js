@@ -16,7 +16,11 @@ module.exports = (store, __exports) => {
     // createWindow = __exports.createWindow,
     path = require('path'),
     helpers = require('../../pkg/helpers.js');
-
+  
+  __exports.getIndexUrl = require(`${helpers
+      .getNotionResources()
+      .replace(/\\/g, '/')}/app/helpers/urlHelpers.js`).getIndexUrl;
+  
   __exports.createWindow = function (relativeUrl, focused_window) {
     if (!relativeUrl) relativeUrl = '';
     const window_state = require(`${helpers

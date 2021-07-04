@@ -105,7 +105,7 @@ module.exports = (store, __exports) => {
     if (
       !document.querySelector('.notion-frame') ||
       !document.querySelector('.notion-sidebar') ||
-      !document.querySelector('.notion-topbar')
+      !document.querySelector('.notion-topbar > div[style*="display: flex"]')
     )
       return;
     clearInterval(attempt_interval);
