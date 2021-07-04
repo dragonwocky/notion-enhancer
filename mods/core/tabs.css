@@ -13,6 +13,7 @@
   text-size-adjust: 100%;
   font-family: var(--theme--font_sans) !important;
   outline-color: var(--theme--table-border);
+  font-size: 14px;
 }
 
 @keyframes spin {
