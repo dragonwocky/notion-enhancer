@@ -9,6 +9,7 @@
 
 module.exports = (store, __exports) => {
   const electron = require('electron'),
+    is_mac = process.platform === 'darwin',
     allWindows = () =>
       electron.BrowserWindow.getAllWindows().filter(
         (win) => win.getTitle() !== 'notion-enhancer menu'
@@ -17,7 +18,7 @@ module.exports = (store, __exports) => {
     path = require('path'),
     helpers = require('../../pkg/helpers.js');
 
-  __exports.createWindow = function (relativeUrl, focused_window) {
+  __exports.createWindow = function (relativeUrl, focused_window, force = false) {
     if (!relativeUrl) relativeUrl = '';
     const window_state = require(`${helpers
         .getNotionResources()
@@ -41,6 +42,12 @@ module.exports = (store, __exports) => {
       rect.width = focused_window.getSize()[0];
       rect.height = focused_window.getSize()[1];
     }
+
+    const windows = electron.BrowserWindow.getAllWindows();
+    if (is_mac && !force && windows.length) {
+      return;
+    }
+
     let window = new electron.BrowserWindow({
       show: false,
       backgroundColor: '#ffffff',

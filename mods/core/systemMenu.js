@@ -164,7 +164,7 @@ module.exports = (store, __exports) => {
                   intl.formatMessage(menuMessages.newWindow)
                 ),
                 accelerator: 'CmdOrCtrl+Shift+N',
-                click: () => createWindow.createWindow(),
+                click: () => createWindow.createWindow('', '', true),
               },
               ...(tabsEnabled
                 ? [
