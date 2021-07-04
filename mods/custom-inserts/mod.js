@@ -13,7 +13,7 @@ module.exports = {
   tags: ['extension'],
   name: 'custom inserts',
   desc: `link files for small client-side tweaks. (not sure how to do something? check out the
-      [tweaks](https://github.com/notion-enhancer/notion-enhancer/blob/master/TWEAKS.md) collection.)`,
+      [tweaks](https://github.com/notion-enhancer/tweaks) collection.)`,
   version: '0.1.3',
   author: 'dragonwocky',
   options: [
